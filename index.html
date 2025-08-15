@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <!-- header section -->
+    <header>
+        <h1>Student Registration System</h1>
+
+        <!-- A  small Brief description -->
+        <p>The provided HTML code outlines a simple Student Registration System that enables users to register new
+            students by filling out a form with their name, student ID, email, and contact number, all of which are
+            required fields.</p>
+    </header>
+
+    <main>
+        <section>
+            <form id="studentForm">
+                <h2>Register New Student</h2>
+                <div>
+                    <label for="studentName">Student Name</label>
+                    <input type="text" id="studentName" name="studentName" required>
+                </div>
+                <div>
+                    <label for="studentID">Student ID</label>
+                    <input type="number" id="studentID" name="studentID" required>
+                </div>
+                <div>
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="contact">Contact No</label>
+                    <input type="number" id="contact" name="contact" required>
+                </div>
+                <button type="button" id="addStudent">Add Student</button>
+            </form>
+        </section>
+
+
+        <!-- Registed students records details -->
+        <section class="records">
+            <h2>Registered Students</h2>
+            <div class="scrollable">
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student ID</th>
+                            <th>Email</th>
+                            <th>Contact No</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+<!-- Github llnk https://github.com/shikhar125/Student-Registration-System.git 
+    If you want to see this project on github the link ih here.-->
